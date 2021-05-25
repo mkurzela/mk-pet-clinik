@@ -27,9 +27,6 @@
     <properties>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
-
-    </dependencies>
 
     <build>
         <pluginManagement>
@@ -46,8 +43,19 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
         </pluginManagement>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/mkurzela/mk-pet-clinik.git</developerConnection>
+    </scm>
 
 </project>
